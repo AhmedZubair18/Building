@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Elevator</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="building">
-        <div class="floor third">Third Floor</div>
-        <div class="floor second">Second Floor</div>
-        <div class="floor first">First Floor</div>
-        <div class="floor ground">Ground Floor</div>
-        <div class="lift" id="lift">Lift</div>
+        <div class="elevator" id="elevator">
+        </div>
+            <div class="floor" id="floor1">4</div>
+            <div class="floor" id="floor2">3</div>
+            <div class="floor" id="floor3">2</div>
+            <div class="floor" id="floor4">1</div>
     </div>
-    <div class="controls">
-        <button onclick="moveLift('third')">Third Floor</button>
-        <button onclick="moveLift('second')">Second Floor</button>
-        <button onclick="moveLift('first')">First Floor</button>
-        <button onclick="moveLift('ground')">Ground Floor</button>
+    <div class="control">
+        <div class="buttons">
+        <button onclick="moveElevator(18)">1</button>
+            <button onclick="moveElevator(168)">2</button>
+            <button onclick="moveElevator(320)">3</button>
+            <button onclick="moveElevator(472)">4</button>
+        </div>
     </div>
 
 </body>

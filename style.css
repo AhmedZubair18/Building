@@ -1,99 +1,43 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    
 }
-
-.building {
-    position: relative;
-    width: 200px;
+.building{
+    width: 250px;
     height: 600px;
-    border: 2px solid #333;
+    background-color: lightgray;
 }
-
-.floor {
-    position: absolute;
-    width: 100%;
+.floor{
+    width: 250px;
     height: 150px;
-    border-bottom: 2px solid #333;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
+    background-color: gray;
+    border: 1px solid;
+    text-align: center;
 }
-
-.floor:last-child {
-    border-bottom: none;
-}
-
-.ground {
-    bottom: 0;
-    background-color: #f1f1f1;
-}
-
-.first {
-    bottom: 150px;
-    background-color: #e1e1e1;
-}
-
-.second {
-    bottom: 300px;
-    background-color: #d1d1d1;
-}
-
-.third {
-    bottom: 450px;
-    background-color: #c1c1c1;
-}
-
-.lift {
+.elevator{
+    width: 250px;
+    height: 152px;
+    background-color: aqua;
     position: absolute;
-    bottom: 0;
-    width: 80px;
-    height: 150px;
-    background-color: #666;
-    transition: bottom 1s;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-weight: bold;
-    border-left: 2px solid #333;
-    border-right: 2px solid #333;
+    bottom: 18px;
+    transition: top 3s;
 }
-
-.lift::before {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background-color: #fff;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.controls {
-    margin-left: 20px;
+.buttons{
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    width: 10vh;
 }
-
-.controls button {
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 16px;
+.control{
+    position: relative;
+    left: 100px;
+    top: 200px;
+}
+.buttons button{
+    font-size: 30px;
     cursor: pointer;
-    border: 1px solid #333;
-    background-color: #f1f1f1;
-    transition: background-color 2s;
-}
-
-.controls button:hover {
-    background-color: #ddd;
 }
